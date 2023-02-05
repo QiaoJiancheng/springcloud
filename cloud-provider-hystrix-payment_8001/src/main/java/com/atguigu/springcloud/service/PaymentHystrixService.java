@@ -9,4 +9,6 @@ public interface PaymentHystrixService {
     public String paymentHystrix_ok(Integer id);
 
     public String paymentHystrix_timeOut(Integer id);
+
+    public String paymentCircuitBreaker(Integer id);
 }
