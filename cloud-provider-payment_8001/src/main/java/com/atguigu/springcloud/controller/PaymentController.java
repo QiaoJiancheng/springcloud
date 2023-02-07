@@ -31,7 +31,7 @@ public class PaymentController {
         log.info("保存数据Payment成功，{}", result);
         if (result > 0) {
             return new CommonResult(200, "****** 保存成功 ******" + serverPort, result);
-        }else {
+        } else {
             return new CommonResult(444, "****** 保存失败 ******", null);
         }
     }
@@ -42,7 +42,7 @@ public class PaymentController {
         log.info("查询成功，{}", payment);
         if (payment != null) {
             return new CommonResult(200, "****** 查询成功 ******" + serverPort, payment);
-        }else {
+        } else {
             return new CommonResult(444, "****** 查询失败 ******", null);
         }
     }
@@ -63,5 +63,11 @@ public class PaymentController {
     @GetMapping("/payment/lb")
     public String paymentLb() {
         return this.serverPort;
+    }
+
+    @GetMapping("/payment/zipkin")
+    public String paymentZipkin()
+    {
+        return "hi ,i'am paymentzipkin server fall back，welcome to atguigu，O(∩_∩)O哈哈~";
     }
 }

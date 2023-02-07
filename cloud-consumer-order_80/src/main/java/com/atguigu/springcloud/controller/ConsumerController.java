@@ -59,4 +59,12 @@ public class ConsumerController {
         ServiceInstance instance = loadBalancer.instances(instances);
         return restTemplate.getForObject(instance.getUri() + "/payment/lb", String.class);
     }
+
+    // ====================> zipkin+sleuth
+    @GetMapping("/consumer/payment/zipkin")
+    public String paymentZipkin()
+    {
+        String result = restTemplate.getForObject("http://localhost:8001"+"/payment/zipkin/", String.class);
+        return result;
+    }
 }
