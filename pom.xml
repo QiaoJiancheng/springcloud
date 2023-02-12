@@ -27,6 +27,14 @@
         <module>cloud-stream-rabbitmq-provider_8801</module>
         <module>cloud-stream-rabbitmq-consumer_8802</module>
         <module>cloud-stream-rabbitmq-consumer_8803</module>
+        <module>cloudalibaba-provider-payment_9001</module>
+        <module>cloudalibaba-consumer-nacos-order83</module>
+        <module>cloudalibaba-config-nacos-client3377</module>
+        <module>cloudalibaba-sentinel-service8401</module>
+        <module>cloudalibaba-provider-payment9003</module>
+        <module>cloudalibaba-provider-payment9004</module>
+        <module>cloudalibaba-consumer-nacos-order84</module>
+        <module>untitledseata-order-service2001</module>
     </modules>
 
     <!-- 统一Jar包版本管理-->
