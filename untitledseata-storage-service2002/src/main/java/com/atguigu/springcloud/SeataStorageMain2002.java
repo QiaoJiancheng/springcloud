@@ -8,13 +8,16 @@ import org.springframework.cloud.openfeign.EnableFeignClients;
 
 /**
  * @author QiaoJiancheng
- * @create 2023/2/12 21:40
+ * @create 2023/2/13 16:08
  */
-@EnableFeignClients
+
 @SpringBootApplication(exclude = DataSourceAutoConfiguration.class)
 @EnableDiscoveryClient
-public class SeataOrderMain2001 {
+@EnableFeignClients
+public class SeataStorageMain2002 {
+
     public static void main(String[] args) {
-        SpringApplication.run(SeataOrderMain2001.class, args);
+        SpringApplication.run(SeataStorageMain2002.class, args);
     }
+
 }
